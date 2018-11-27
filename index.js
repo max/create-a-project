@@ -1,17 +1,22 @@
 const { Toolkit } = require("actions-toolkit");
+const fm = require("front-matter");
 
 class ProjectCreator {
-  constructor() {
+  constructor(template) {
+    this.template = template || ".github/PROJECT_TEMPLATE.taskpaper";
     this.tools = new Toolkit();
   }
 
   async go() {
+    const file = this.tools.getFile(this.template);
+    const { attributes } = fm(file);
+
     const octokit = this.tools.createOctokit();
 
     return octokit.projects.createForRepo(
       this.tools.context.repo({
-        name: "My project title",
-        body: "My project body"
+        name: attributes.title,
+        body: attributes.description
       })
     );
   }

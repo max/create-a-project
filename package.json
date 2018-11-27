@@ -10,7 +10,8 @@
   "author": "Max Schoening <max@max.wtf>",
   "license": "MIT",
   "dependencies": {
-    "actions-toolkit": "0.0.4"
+    "actions-toolkit": "0.0.4",
+    "front-matter": "^3.0.1"
   },
   "devDependencies": {
     "jest": "^23.6.0"

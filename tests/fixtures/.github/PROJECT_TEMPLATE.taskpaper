@@ -1,0 +1,12 @@
+---
+title: My Fantastic Project Board
+description: My amazing project board description.
+---
+
+This is a column:
+  - This is a task
+  - This is another task
+
+This is another column:
+  - This is a task @label(My Label)
+  - This is another task

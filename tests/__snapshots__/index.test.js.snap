@@ -4,8 +4,8 @@ exports[`create-a-project creates a new project 1`] = `
 Array [
   Array [
     Object {
-      "body": "My project body",
-      "name": "My project title",
+      "body": "My amazing project board description.",
+      "name": "My Fantastic Project Board",
       "owner": "max",
       "repo": "waddup",
     },
