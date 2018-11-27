@@ -5,12 +5,14 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "author": "Max Schoening <max@max.wtf>",
   "license": "MIT",
   "dependencies": {
     "actions-toolkit": "0.0.4"
+  },
+  "devDependencies": {
+    "jest": "^23.6.0"
   }
 }

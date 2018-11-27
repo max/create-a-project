@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`create-a-project creates a new project 1`] = `
+Array [
+  Array [
+    Object {
+      "body": "My project body",
+      "name": "My project title",
+      "owner": "max",
+      "repo": "waddup",
+    },
+  ],
+]
+`;
